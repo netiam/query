@@ -29,6 +29,14 @@ query(connection)
   …
 ```
 
+## How it works
+
+The query builder tries to build an optimized query from what you have provided.
+In any case, it will not do anything until your connection is ready. You don't
+have to wait for a `connection.on('ready')` event or something similar. All
+commands are queued and will execute automatically after connection has been
+established. This is also true for temporary unavailable connections.
+
 ## Examples
 
 Query a document, populate all documents at path `users`, select the user level
