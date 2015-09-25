@@ -11,6 +11,24 @@ someone has always to fetch a certain `document` in order to fetch another one.
 We want to do this in a `declarative` way and also allow functional programing.
 In all cases, `callback` or any other evaluation is prohibited.
 
+## Install
+
+```bash
+npm i -S netiam-query
+```
+
+## Adapter
+
+```js
+import adapter from 'netiam-adapter'
+
+const connection = adapter({…})
+
+query(connection)
+  .use('groups')
+  …
+```
+
 ## Examples
 
 Query a document, populate all documents at path `users`, select the user level
