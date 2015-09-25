@@ -21,10 +21,21 @@ query()
   .use('groups')
   .find({id: 1})
   .populate('users')
-  .select('level')
+  .select('users.level')
   .use('levels')
-  .find('level.id')
+  .find({id: 'users.level'})
   .reduce((total, level) => total += level.val, 0)
+```
+
+Update nested document(s).
+
+```js
+query()
+  .use('groups')
+  .find()
+  .populate('users')
+  .use('users')
+  .update({id: 'users.id'}, {role: 'USER'})
 ```
 
 Delete all nested `documents` that match a certain `criteria`.
