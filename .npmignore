@@ -1,7 +1,4 @@
-# IDE
-.idea/
-
-# log
+# Logs
 *.log
 
 # coverage
