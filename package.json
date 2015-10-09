@@ -2,9 +2,18 @@
   "name": "netiam-query",
   "version": "1.0.0-semantically-released",
   "description": "Declarative and expressive database queries.",
-  "main": "lib/query.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "build": "./bin/build",
+    "clean": "./bin/clean",
+    "lint": "./bin/lint",
+    "start": "npm run watch",
+    "test": "npm run test:unit",
+    "test:debug": "DEBUG=netiam:* npm test",
+    "test:unit": "mocha",
+    "test:coverage": "istanbul cover _mocha --report lcovonly -- -R spec",
+    "watch": "./bin/watch",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -30,5 +39,8 @@
     "eslint": "^1.5.1",
     "mocha": "^2.3.3",
     "should": "^7.1.0"
+  },
+  "dependencies": {
+    "mongodb": "^2.0.43"
   }
 }

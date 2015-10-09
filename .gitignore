@@ -12,3 +12,6 @@ dist/
 
 # dependencies
 node_modules/
+
+# lib
+lib/
