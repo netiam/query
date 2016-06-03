@@ -41,6 +41,6 @@
     "should": "^8.2.1"
   },
   "dependencies": {
-    "mongodb": "^2.0.43"
+    "mongodb": "^2.1.15"
   }
 }
