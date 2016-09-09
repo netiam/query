@@ -37,7 +37,7 @@
     "babel": "^6.5.2",
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
-    "mocha": "^3.0.1",
+    "mocha": "^3.0.2",
     "should": "^11.1.0"
   },
   "dependencies": {
