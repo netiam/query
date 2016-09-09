@@ -39,8 +39,8 @@
     "eslint": "^3.5.0",
     "mocha": "^3.0.2",
     "should": "^11.1.0"
-  },
-  "dependencies": {
-    "mongodb": "^2.2.9"
+    "jison": "^0.4.15",
+    "mysql": "^2.9.0",
+    "sequelize": "^3.13.0"
   }
 }
