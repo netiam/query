@@ -40,8 +40,6 @@
     "jison": "^0.4.15",
     "mocha": "^2.3.3",
     "should": "^7.1.0"
-  },
-  "dependencies": {
     "mysql": "^2.9.0",
     "sequelize": "^3.13.0"
   }
